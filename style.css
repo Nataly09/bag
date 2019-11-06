@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic');
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+header #box_top, footer{
+    height: 50px;
+    width: 100%; 
+    background: #2b2a2a;
+    z-index: 100;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#box_top .phone, footer .phone{
+    font-size: 20px;
+    color: #ffffff;
+    padding-left: 25px;
+}
+
+#box_top a, footer a{
+    display: flex;
+}
+
+#box_top a img, footer a img {
+    width: 20px;
+    height: 20px;
+    padding-right: 25px;
+}
+
+header #box_bottom{
+    height: 70px;
+    width: 100%;
+    z-index: 999;
+    background: #1b1a1a;
+    position: fixed;
+}
+
+.general{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+nav a {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: #ffdd5f;
+}
+
+nav a:hover {
+    color: #fa9542;
+}
+
+
+.unit_1{
+    padding-top: 70px;
+    background: #2b2a2a;
+    z-index: 1;
+}
+
+.unit_1 h2{
+    font-size: 70px;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.fond{
+    width: 25%;
+    z-index: 10;
+}
+
+.fond img{
+    width: 100%;
+    min-width: 100px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    z-index: 10;
+}
+
+
+#pixel_1 {
+    height: 45px;
+    width: 45px;
+    margin-left: 400px;
+    position: absolute;
+    top: -90px;
+    background: #892be249;
+    animation: pixelgo 6s ease-out infinite;
+    z-index: 1;
+}
+
+#pixel_2{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    top: -50px;
+    background: #ffdc5f7c;
+    animation: pixelgo 5s ease-out infinite;
+    z-index: 1;
+}
+
+#pixel_3{
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    left: 100px;
+    top: -75px;
+    background: #2be24970;
+    animation: pixelgo 4s ease-out infinite;
+    z-index: 1;
+}
+
+
+#pixel_4{
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    right: 350px;
+    top: -45px;
+    background: #2ba8e277;
+    animation: pixelgo 4.5s ease-out infinite;
+    z-index: 1;
+}
+
+@keyframes pixelgo {
+    0% {transform: translateY(0)}
+  100%{transform: translateY(640px)}
+}
+
+.unit_2 {
+    background: #ffffff;
+    position: relative;
+    z-index: 10;
+    margin: 0px 15px;
+}
+
+.unit_2 h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 100;
+
+}
+
+.unit_2_img div {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unit_2_img div img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.unit_2_img div h3{
+    font-size: 27px;
+    margin: 15px;
+    font-weight: 300;
+}
+
+.unit_2_text{
+    margin-right: 20px;
+}
+
+.unit_2_text h2{
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffdd5f;
+    text-transform: uppercase;
+}
+
+
+.unit_3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    background: white;
+}
+
+.paint{
+    position: relative;
+    width: 620px;
+    height: 620px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.paint .bag{
+    width: 610px;
+}
+
+#canvas{
+    position: absolute;
+    top: 210px;
+    left: 210px;
+}
+
+.eraser, .pencil, .color {
+    width: 45px; 
+    height: 45px; 
+    display: block;
+    position: absolute; 
+   }
+
+   .eraser{
+    top: 80px;
+}
+
+   .pencil{
+       top: 140px;
+   }
+
+
+.color{
+    top: 200px;
+}
+
+.eraser span, .pencil span, .color span{
+        position: absolute; 
+        left: 0; top: 0;
+        width: 100%; height: 100%;
+        cursor: pointer;
+}
+
+.pencil span {
+    background: url('pencil.png') no-repeat;
+}
+
+.eraser span{
+    background: url('eraser.png') no-repeat;
+}
+
+.color span{
+    background: url('palette.png') no-repeat;
+}
+
+#update{
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: none;
+    position: absolute;
+    top: 260px;
+    padding: 0px;
+}
+
+input[type="radio"],  input[type="color"]	{
+    z-index: -100;
+    position: relative;
+   }
+
+.paint_text{
+    margin-top: 50px;
+}
+
+.paint_text h2{
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.paint_text p{
+    font-size: 19px;
+    margin: 30px 0px;
+    margin-right: 30px;
+}
+
+.unit_3 div a, #send{
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    background: #c347ff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}   
+
+.unit_4{
+    padding: 150px 100px;
+    background: #ffffff;
+    position: relative;
+    z-index: 10;
+
+}
+
+
+.unit_4 .description_img img{
+    max-height: 420px;
+    margin-left: 30px;
+}
+
+.unit_4 .description{
+    margin: 5px 25px;
+    width: 50%;
+}
+
+.unit_4 .description p{
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.unit_4 .description h3 {
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin: 0px;
+    font-weight: 200;
+}
+
+.unit_5{
+    margin: 100px;
+}
+
+.unit_5 div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 20px;
+}
+
+.unit_5 div p{
+    margin: 15px 30px;
+}
+
+.unit_6{
+    margin-top: 100px;
+    background: #2b2a2a;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0px auto;
+    padding: 40px 0px;
+}
+
+.form div{
+    margin: 0px auto;
+}
+
+.form div input{
+    height: 35px;
+    width: 350px;
+    background: #2b2a2a;
+    border: 2px solid #c347ff;
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.form div p{
+    font-size: 22px;
+    color: #ffffff ;
+}
+
+#send{
+    border: 0px;
+    width: 200px;
+    height: 50px;
+    margin: 50px auto;
+    font-size: 20px;
+}
+
+footer{
+    background: #1b1a1a;
+}
+
+footer .logo{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    color: #ffdd5f;
+}
+
+
+
+
+@media (max-width: 925px){
+
+    .unit_1 h2{
+        width: 50%;
+    }
+
+    .unit_2_img{
+        flex-direction: column;
+    }
+
+    .unit_2_img div {
+        width: 60%;
+        align-self: center;
+        margin-top: 40px;
+    }    
+    nav a {
+        font-size: 13px;
+    }
+    .unit_4 .description p {
+        font-size: 19px;
+    }
+
+    #pixel_1{
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 860px){
+    .unit_4 {
+        padding: 150px 60px;
+    }
+
+    .unit_3 {
+        flex-direction: column-reverse;;
+    }
+
+    .paint_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         margin-top: 0px; 
+        margin: 40px;
+    }
+
+    .paint {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 780px){
+    .unit_2_img div {
+        width: 70%;
+    }
+
+    .unit_4 {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 100px 0px;
+    }
+
+    #pixel_1{
+        display: none;
+    }
+    .unit_4 .description_img img {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 660px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    nav a{
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    header #box_bottom {
+        height: 115px;
+    }
+
+    .unit_5 {
+        margin: 50px;
+    }
+
+    .unit_5 div {
+        margin: 15px 5px;
+    }
+    .unit_1 h2 {
+        font-size: 50px;
+    }
+
+     #pixel_2, #pixel_3, #pixel_4{
+        display: none;
+    }
+    .paint {
+        width: 520px;
+        height: 520px;
+    }
+    .paint .bag {
+        width: 500px;
+    }
+
+    #canvas {
+        top: 165px;
+    left: 180px;
+    height: 255px;
+    }
+}
+
+
+@media (max-width: 550px){
+
+
+    .form div input {
+        width: 290px;
+    }
+
+    .unit_5 div p {
+            margin: 5px 15px;
+            font-size: 14px;
+        }
+    
+
+    .unit_5 {
+        margin: 25px;
+    }
+
+    .unit_4 .description {
+        margin: 5px 30px;
+        width: 90%;
+    }
+    .unit_4 .description p, .unit_4 .description h3 {
+        text-align: center;
+    }
+    .unit_3 {
+        margin-top: 60px;
+    }
+
+    .paint {
+        width: 420px;
+        height: 420px;
+    }
+
+    .paint .bag {
+        width: 400px;
+    }
+
+.form div p {
+    font-size: 19px;
+}
+
+.unit_3 div a, #send {
+    width: 180px;
+    font-size: 17px;
+}
+
+.paint_text p {
+     margin-right: 0px; 
+}
+
+#canvas{
+   top: 117px;
+        left: 138px;
+        height: 220px;
+}
+
+}
+
+@media (max-width: 500px){
+    footer {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    footer .phone, footer a img, footer .logo  {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 15px;
+    }
+
+.form {
+     width: 100%;
+
+}
+}
+
+
+@media (max-width: 440px){
+    .unit_4 {
+        padding: 50px 0px;
+    }
+
+    .unit_2_img div {
+        width: 85%;
+    }
+
+    .paint {
+        width: 310px;
+        height: 370px;
+    }
+
+    .paint .bag {
+        width: 310px;
+    }
+
+    #canvas {
+        top: 90px;
+        left: 95px;
+        height: 175px;
+    }
+
+    #update {
+        top: 30px;
+    }
+
+    .unit_1 h2 {
+        font-size: 40px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 370px){
+
+.unit_5 div {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form div input {
+    width: 260px;
+}
+
+.unit_4 .description_img img {
+    max-height: 350px;
+}
+.unit_4 .description p {
+    font-size: 15px;
+}
+.unit_3 {
+    margin-top: 0px;
+}
+.fond img {
+    min-width: 80px;
+    margin-left: 0px;
+}
+
+.unit_1 h2 {
+    font-size: 30px;
+}
+
+.unit_2_img div {
+    width: 95%;
+}
+
+.paint {
+    width: 300px;
+}
+
+.paint .bag {
+    width: 300px;
+}
+}

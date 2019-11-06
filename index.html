@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="box_top">
+            <div class="phone">+380 999 99 99</div>
+            <a href="#"><img src="./img/instagram.svg"></a>
+        </div>
+        <div id="box_bottom">
+            <nav>
+                <a href="#home">Главная</a>
+                <a href="#characteristics">Характеристики</a>
+                <a href="#delivery">Доставка и оплата</a>
+                <a href="#contacts">Контакти</a>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div id="pixel_1"></div>
+        <div id="pixel_2"></div>
+        <div id="pixel_3"></div>
+        <div id="pixel_4"></div>
+        <div class="unit_1 general">
+            <div class="fond">
+                <img src="./img/bagimg.png">
+            </div>
+            <h2> light bag </h2>
+        </div>
+
+        <a name='home'></a>
+        <div class="unit_4 general">
+            <div class="description_img">
+                <img src="./img/DSC_0036.jpg" alt="">
+            </div>
+            <div class="description">
+                <h3>Заголовок</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, est natus voluptas sint esse animi
+                deserunt eligendi porro fuga reiciendis odio in laudantium labore sequi quaerat praesentium optio
+                inventore temporibus?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis iure exercitationem libero officiis
+                voluptatibus laudantium, dignissimos nisi molestiae. Quo corrupti consectetur neque vel, voluptates
+                molestias porro eaque veniam facilis rem.
+            </p>
+        </div>
+        </div>
+
+        <a name='characteristics'></a>
+        <div class="unit_2">
+            <h2>Pix – самый необычный рюкзак,
+                который у вас будет!</h2>
+            <div class="unit_2_img general">
+                <div>
+                    <img src="./img/DSC_1135.jpg">
+                    <h3>
+                        Будь в тренде!
+                    </h3>
+                    <p>
+                        Поспеши! Налетай! У нас рюкзаки покупай!
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/DSC_0908.png">
+                    <h3>
+                        Будь в тренде!
+                    </h3>
+                    <p>
+                        Поспеши! Налетай! У нас рюкзаки покупай!
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/DSC_1547.jpg">
+                    <h3>
+                        Будь в тренде!
+                    </h3>
+                    <p>
+                        Поспеши! Налетай! У нас рюкзаки покупай!
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="unit_3 ">
+            <div class="paint">
+                <label class="color"><input type="color" id="inp"><span></span></label>
+                <label class="eraser" for='eraser'><input type="radio" name="eraser" id="eraser"
+                        value="clear"><span></span></label>
+                <label class="pencil" for="pencil"><input type="radio" name="eraser" id="pencil"
+                        value="clear"><span></span></label>
+                <button id='update'><img src="./img/update.png"></button>
+                <canvas id='canvas' width="200" height="300"></canvas>
+                <img src="./img/bagpack.png" class="bag">
+            </div>
+            <div class="paint_text">
+                <h2>Попробуй сам!</h2>
+                <p>Уникальная возможность Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti
+                    aliquid quaerat cupiditate. In itaque sed esse numquam officia, ullam obcaecati aperiam harum!
+                    Officiis repellendus aut, magnam ducimus quod quia.</p>
+                <a href="#">Заказать</a>
+            </div>
+        </div>
+        <a name='delivery'></a>
+        <div class="unit_5">
+            <div>
+                <img src="./img/truck.png">
+                <p>
+                    Отправка товара осуществляется в день заказа, если оплата получена до 15
+                    часов этого же дня, кроме воскресенья и государственных праздников, которые отправляються на
+                    следующий день. Срок доставки службой Новая Почта составляет 1-3 дня.
+                    Вы можете заказать доставку в отделение Новой Почты, или курьером в удобное для вас место.</p>
+            </div>
+            <div>
+                <img src="./img/wallet.png">
+                <p>Оплата производится с помощью терминалов самообслуживания или кассы ПриватБанка. Для оплаты этим
+                    способом выберите услугу «Банковский перевод» и укажите реквизиты, которые будут отправлены после
+                    оформления заказа. Комиссия за услуги банка составляет 0,5% от суммы вашего заказа. </p>
+            </div>
+        </div>
+        <a name='contacts'></a>
+        <div class="unit_6">
+            <div class="form">
+                <div>
+                    <p>Имя</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Фамилия</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Номер телефона</p>
+                    <input type="text">
+                </div>
+                <button id="send">Отправить</button>
+            </div>
+        </div>
+        <footer>
+            <div class="phone">+380 999 99 99</div>
+            <div class="logo">light bag</div>
+            <a href="#"><img src="./img/instagram.svg"></a>
+        </footer>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
